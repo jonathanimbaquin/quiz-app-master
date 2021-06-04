@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  font-family: "Verdana", cursive, sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background-color: #7cc6fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.questions {
+  background-color: #252d4a;
+  max-width: 580px;
+  min-height: 500px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  justify-content: space-evenly;
+  margin-top: 22px;
+}
+
+.score-section {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  align-items: center;
+}
+
+.button__exit {
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+  font-size: 24px;
+  align-items: center;
+  margin-top: 330px;
+  width: 200px;
+}
+
+/* QUESTION/TIMER/LEFT SECTION */
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: justify;
+}
+
+.timer-text {
+  background: rgb(230, 153, 12);
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 5px solid rgb(255, 189, 67);
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+button {
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #252d4a;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
+  border: 5px solid #234668;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.correct {
+  background-color: #2f922f;
+}
+
+.incorrect {
+  background-color: #ff3333;
+}
+
+button:hover {
+  background-color: #555e7d;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
+}
